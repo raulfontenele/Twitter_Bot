@@ -2,8 +2,12 @@ import tweepy
 from chaves import *
 from random import randint
 
+# Nota do autor:
+# O arquivos com nome de chaves.py foi omitido, para você você
+# use suas próprias chaves de acesso
+
 def Autenticacao():
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
     auth.set_access_token(key, secret)
     api = tweepy.API(auth)
     return api
